@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +31,7 @@ nav{
 
 nav h2 {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 
@@ -37,7 +41,8 @@ nav .part2 {
 }
 
 nav .part2 h2 {
-    font-weight: 400;
+    font-family: "Inter";
+    font-weight: 500;
     font-size: 30px;
 }
 
@@ -50,9 +55,9 @@ nav .part2 h2 {
 }
 
 .middle h1{
-    font-family: "Helvetica";
-    font-weight: 900;
-    font-size: 230px;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 250px;
     width: 120px;
     line-height: 200px;
 }
@@ -65,30 +70,122 @@ nav .part2 h2 {
     background-position:center ;
     background-size: cover;
     border-radius: 500px;
-    position: absolute;
-    right: 100px;
-    top: 250px;
+    position: relative;
+    left: 55vw;
+    top: 10px;
     align-items: center;
 }
 
-.slider::before {
-    margin-left: 50px;
+/* .slider::before {
+    margin-left: 10px;
     border-radius: 50px;
     content: "";
     display: flex;
     position: absolute;
     height: 100px;
     width: 100px;
-    background-color: #000;
+    background-color: #ffffff;
     z-index: 11;
-}
+} */
 
 .slider i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 40px;
     position: relative;
     height: 100px;
     width: 100px;
     z-index: 1000;
-    color: black;
-    left: 100px;
-    top: 100px;
+    color: #D5FF3F;
+    background-color: black;
+    left: 10px;
+}
+
+.middle p {
+    font-family: "Roboto";
+    left: 15vw;
+    top: 27vh;
+    line-height: 50px;
+    position: relative;
+    width: 680px;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sparkle {
+    right: 250px;
+    position: absolute;
+    display: flex;
+    top: 380px;
+    gap: 80px;
+    opacity: 0.1;
+    
+}
+
+.sparkle img {
+    height: 40px;
+}
+
+.bottom {
+    padding: 30px 90px;
+    height: 100px;
+    width: 100vw;
+}
+
+.bottom .btn1 {
+    display: flex;
+    border-radius: 50px;
+    width: 450px;
+    height: 80px;
+    font-size: 35px;
+    gap: 20px;
+    word-spacing: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+}
+.bottom .btn2 {
+    display: flex;
+    border-radius: 50px;
+    width: 450px;
+    height: 80px;
+    font-size: 35px;
+    gap: 20px;
+    word-spacing: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn1 img {
+    height: 40px;
+    
+}
+
+.bottom {
+    display: flex;
+    gap: 50px;
+}
+
+.bottom::after {
+    top: 80%;
+    position: relative;
+    content: "";
+    width: 700px;
+    height: 5px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);;
+}
+
+.bottom::before{
+    position: relative;
+    container: "";
+    height: 109px;
+    width: 109px;
+    border-radius: 50px;
+    background-color: #000;
+    z-index: 100;
 }
