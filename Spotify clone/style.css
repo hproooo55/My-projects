@@ -34,7 +34,7 @@ body {
 }
 
 .logo i {
-    transform: rotate(5deg);
+    transform: rotate(2deg);
     position: relative;
     font-size: 35px;
     color: aliceblue;
