@@ -8,8 +8,8 @@ const App = () => {
 
   const handleMouseMove = (e) => {
     const { innerWidth, innerHeight } = window;
-    const x = (e.clientX - innerWidth / 2) / 500; // Adjust divisor to control intensity
-    const y = (e.clientY - innerHeight / 2) / 500;
+    const x = (e.clientX - innerWidth / 2) / 20; // Adjust divisor to control intensity
+    const y = (e.clientY - innerHeight / 2) / 20;
     setOffsetX(x);
     setOffsetY(y);
   };

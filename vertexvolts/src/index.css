@@ -4,3 +4,21 @@
 *{
     font-family: monospace;
 }
+
+li::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: red;
+    display: flex;
+    transition: all 500ms ease;
+}
+
+li:hover::after {
+    width: 100%;
+  }
+
+li:hover {
+    cursor: pointer;
+}
